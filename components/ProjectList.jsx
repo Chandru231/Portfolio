@@ -1,6 +1,6 @@
 import React from 'react';
 import { PROJECTS } from '../constants';
-import { ArrowUpRight, GitFork, Disc, CornerDownRight } from 'lucide-react';
+import { ArrowUpRight, CornerDownRight } from 'lucide-react';
 import Reveal from './Reveal';
 
 const ProjectList = () => {
