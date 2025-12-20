@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALEX // SYSTEM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:ital,wght@0,400;0,800;1,400&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['JetBrains Mono', 'monospace'],
+            display: ['Anton', 'sans-serif'],
+          },
+          colors: {
+            brutal: {
+              bg: '#f0f0f0',
+              black: '#080808',
+              white: '#ffffff',
+              orange: '#ff3300',
+              gray: '#888888',
+            }
+          },
+          backgroundImage: {
+            'grid-pattern': "linear-gradient(to right, #e5e5e5 1px, transparent 1px), linear-gradient(to bottom, #e5e5e5 1px, transparent 1px)",
+          },
+          animation: {
+            'marquee': 'marquee 20s linear infinite',
+            'blink': 'blink 1s step-end infinite',
+            'scan': 'scan 4s linear infinite',
+          },
+          keyframes: {
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-100%)' },
+            },
+            blink: {
+              '0%, 100%': { opacity: '1' },
+              '50%': { opacity: '0' },
+            },
+            scan: {
+              '0%': { transform: 'translateY(-100%)' },
+              '100%': { transform: 'translateY(100%)' },
+            }
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      color: #080808;
+      overflow-x: hidden;
+    }
+
+    a,
+    button,
+    input,
+    .hover-target {
+      cursor: pointer;
+    }
+
+    ::selection {
+      background-color: #080808;
+      color: #ff3300;
+    }
+
+    .text-stroke-black {
+      -webkit-text-stroke: 2px #080808;
+      color: transparent;
+    }
+
+    .text-stroke-white {
+      -webkit-text-stroke: 1px #ffffff;
+      color: transparent;
+    }
+
+    .text-stroke-orange {
+      -webkit-text-stroke: 1px #ff3300;
+      color: transparent;
+    }
+
+    .bg-grid {
+      background-size: 40px 40px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    }
+
+    /* Reveal Animation Utility */
+    .reveal-container {
+      overflow: hidden;
+    }
+
+    .reveal-text {
+      transform: translateY(110%);
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .is-visible .reveal-text {
+      transform: translateY(0);
+    }
+
+    .mask-image-b-fade {
+      -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+      mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    }
+  </style>
+
+  <link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-DPwFH1up.js"></script>
+</head>
+
+<body>
+  <div class="fixed inset-0 bg-grid pointer-events-none z-0"></div>
+  <div id="root" class="relative z-10"></div>
+</body>
+
+</html>
