@@ -4,7 +4,7 @@ export const PROJECTS = [
         title: 'LANDING PAGES',
         description: 'Conversion-focused landing pages. Clean UI. Lightning-fast. Responsive everywhere.',
         techStack: ['REACT JS', 'JAVASCRIPT', 'HTML', 'CSS'],
-        imageUrl: '/images/Landing page thumbnail.jpg',
+        imageUrl: './images/Landing page thumbnail.jpg',
         year: '2024',
         liveDemo: 'https://github.com/Chandru231?tab=repositories'
     },
@@ -13,7 +13,7 @@ export const PROJECTS = [
         title: 'Bus Timing Finder',
         description: 'Bus Timing Finder is an application that helps users quickly find accurate bus schedules and routes to plan their travel efficiently.',
         techStack: ['REACT JS', 'JAVASCRIPT', 'HTML', 'CSS'],
-        imageUrl: '/images/Bus-Timing-thumbnail.jpg',
+        imageUrl: './images/Bus-Timing-thumbnail.jpg',
         year: '2023',
         liveDemo: 'https://mybus-timings.vercel.app/'
     },
