@@ -6,7 +6,7 @@ export const PROJECTS = [
         techStack: ['REACT JS', 'JAVASCRIPT', 'HTML', 'CSS'],
         imageUrl: './images/Landing page thumbnail.jpg',
         year: '2024',
-        liveDemo: 'https://royal-lens-studio.vercel.app/'
+        liveDemo: 'https://chandru231.github.io/Landing-page-showcase/'
     },
     {
         id: 'p2',
